@@ -41,10 +41,10 @@ class LogisticRegression:
         return self.predict_prob(X) >= threshold
 
 model = LogisticRegression(lr=0.1, num_iter=300000)
-%time model.fit(X, y)
-CPU times: user 13.8 s, sys: 84 ms, total: 13.9 s
-Wall time: 13.8 s
+time model.fit(X, y)
+#CPU times: user 13.8 s, sys: 84 ms, total: 13.9 s
+#Wall time: 13.8 s
 preds = model.predict(X)
 # accuracy
 (preds == y).mean()
-1.0
+#1.0
